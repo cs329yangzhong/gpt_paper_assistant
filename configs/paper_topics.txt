@@ -1,21 +1,40 @@
  1. New methodological improvements to RLHF or instruction-following which are specific fine-tuning steps that are taken to make language models better at following user instructions across a range of tasks.
     - Relevant: papers that discuss specific methods like RLHF, or instruction-tuning datasets, improving these methods, or analyzing them. Usually these papers will explicitly mention RLHF, instruction-following or instruction-tuning.
     - Not relevant: papers about adaptation to some task. Simply following instructions or inputs are not sufficient.
- 2. Shows new powerful test set contamination or membership inference methods for language models. Test set contamination is the phenomenon where a language model observes a benchmark dataset during pretraining.
-    - Relevant: test statistics that can detect contamination of benchmarks in language models. statistics that can provide guarantees are more interesting. membership inference methods that are general enough to apply to language models are also relevant.
-    - Not relevant: any papers that do not consider language models, or that do not consider test set contamination.
+ 2. New methodological improvements on State Space Model that can be appled to text and multi-domain. 
  3. Shows a significant advance in the performance of diffusion language models.
     - Relevant: papers that study language models that are also diffusion models. Continuous diffusions are even more relevant, while discrete diffusions are less so.
     - Not relevant: papers about image diffusions like DALL-E or Stable Diffusion, or papers that do not explicitly mention language models or applications to text.
  4. Describes new paradigms to evaluating open-ended text generation. Evaluating the outputs of language models is hard, especially in open-ended settings like for chatbots.
     - Relevant: papers that fundamentally rethink language model evaluation -- especially by accounting for subjectivity or using adversaries.
     - Not relevant: specific evaluations for specific tasks, identifying new properties or flaws of language models, or simply collecting new data.
- 5. Conducts surveys or provides data into real-world usage and safety properties of language models.
-    - Relevant: papers that create new datasets or surveys on real-world usage of language models.
-    - Not relevant: papers that apply language models to new real-world tasks.
- 6. Studies 'scaling laws' in the context of neural networks. Scaling laws refer to the very clear power-law relationship between the size or computational power used to train a model and the performance of that model.
-    - Relevant: theoretical or conceptual explanation behind scaling laws for language models.
-    - Not relevant: papers that have experiments at different model scales (but do not explicitly fit a scaling law) or papers that mention scaling laws, but the scaling laws are not the central subject of the paper
+Certainly! Here are texts for each individual research topic following the format provided:
+
+1. **Discourse Parsing and Application**
+   - **Relevant**: Papers that discuss new algorithms, frameworks, or datasets for improving discourse parsing, such as hierarchical attention mechanisms or graph-based models, especially those that focus on the application of discourse parsing in tasks like argument mining, text summarization, or sentiment analysis. Research that introduces novel evaluation metrics for discourse parsing or examines its integration into downstream NLP tasks is also pertinent.
+   - **Not relevant**: Studies that focus solely on syntactic parsing or dependency parsing without addressing discourse structures. Papers that explore general natural language understanding without specific mention of discourse parsing or its application.
+
+2. **Document Structure Understanding**
+   - **Relevant**: Research that introduces novel approaches to understanding document structures, including hierarchical or graph-based models that capture the relationships between sections, paragraphs, or sentences. Methods that focus on leveraging document structure for tasks like information extraction, document summarization, or question answering are particularly relevant. Studies proposing new datasets for document structure understanding or benchmarking existing models in this domain are also of interest.
+   - **Not relevant**: Work that deals with general text classification or flat text processing without considering the hierarchical or structured nature of documents. Papers that focus on sentence-level tasks without considering the broader document context.
+
+3. **Novel Approaches in Liquid and Spike Neural Networks**
+   - **Relevant**: Papers that propose new architectures or training methods for liquid and spiking neural networks, especially those that demonstrate their applicability to NLP tasks. Research that explores the efficiency, interpretability, or robustness of these networks in comparison to traditional neural architectures in specific applications like real-time processing, neuromorphic computing, or energy-efficient AI is highly relevant.
+   - **Not relevant**: Studies that focus on traditional feedforward or recurrent neural networks without involving liquid or spiking dynamics. Papers that address these neural network types only in the context of non-NLP domains like robotics or control systems without exploring their potential for text-based tasks.
+
+4. **Document Summarization and Multi-Modality**
+   - **Relevant**: Research that presents new techniques for multi-modal document summarization, where the model must integrate and summarize information from different modalities such as text, images, tables, or audio. Studies that explore cross-modal interactions, propose new datasets, or benchmark multi-modal summarization models in real-world scenarios are also relevant. Papers that examine the challenges of aligning different modalities in the summarization process are of particular interest.
+   - **Not relevant**: Papers that focus solely on text-based summarization without addressing multi-modality. Research on multi-modal tasks like image captioning or audio transcription that does not involve summarization is not pertinent.
+
+5. **Information Theory in Deep Learning**
+   - **Relevant**: Papers that apply principles of information theory to improve the understanding, training, or performance of deep learning models. Research that explores topics like information bottleneck, mutual information maximization, or entropy-based regularization in the context of neural networks, especially with an emphasis on how these principles can lead to more robust, generalizable, or interpretable models, is highly relevant.
+   - **Not relevant**: Studies that discuss information theory in a purely theoretical context without application to deep learning. Papers that explore deep learning models without considering or integrating information-theoretic concepts or principles.
+
+8. Studies the Discourse and Pragmatic perspectives of language. The work would be of great interest on how to
+better model the structure of texts and making better generations.
+
+9. New methods in summarization, especially the controllable generation aspects. Models should be able to
+follow the instructions and generate faithful contents.
 
  In suggesting papers to your friend, remember that he enjoys papers on statistical machine learning, and generative modeling in natural language processing.
  Your friend also likes learning about surprising empirical results in language models, as well as clever statistical tricks.
